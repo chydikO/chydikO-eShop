@@ -17,6 +17,7 @@
 		AF0530AC24A5F7DF001282AD /* UserInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0530AB24A5F7DF001282AD /* UserInApp.swift */; };
 		AF0530B524A5FB5C001282AD /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0530B424A5FB5C001282AD /* CustomTextField.swift */; };
 		AF0530B724A5FB69001282AD /* CustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF0530B624A5FB69001282AD /* CustomTextField.xib */; };
+		AFE3F8AF24A90A5B007AAE93 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3F8AE24A90A5B007AAE93 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AF0530AB24A5F7DF001282AD /* UserInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInApp.swift; sourceTree = "<group>"; };
 		AF0530B424A5FB5C001282AD /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		AF0530B624A5FB69001282AD /* CustomTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextField.xib; sourceTree = "<group>"; };
+		AFE3F8AE24A90A5B007AAE93 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				AF0530AD24A5F908001282AD /* Application */,
 				AF0530AA24A5F7B9001282AD /* Model */,
+				AFE3F8AD24A90A3E007AAE93 /* Extention */,
 				AF0530AF24A5F94C001282AD /* Scene */,
 				AF0530B324A5F9E1001282AD /* ReuseableView */,
 				AF0530AE24A5F93B001282AD /* Utility */,
@@ -143,6 +146,14 @@
 			path = ReuseableView;
 			sourceTree = "<group>";
 		};
+		AFE3F8AD24A90A3E007AAE93 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				AFE3F8AE24A90A5B007AAE93 /* UIViewExtension.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE3F8AF24A90A5B007AAE93 /* UIViewExtension.swift in Sources */,
 				AF05309724A5E840001282AD /* ViewController.swift in Sources */,
 				AF0530AC24A5F7DF001282AD /* UserInApp.swift in Sources */,
 				AF0530A924A5F411001282AD /* LoginController.swift in Sources */,

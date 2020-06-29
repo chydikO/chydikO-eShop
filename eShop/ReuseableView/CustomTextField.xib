@@ -8,9 +8,13 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTextField" customModule="eShop" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTextField" customModule="eShop" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="c5B-n7-B8n" id="gJ7-xX-qQf"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomTextField" customModule="eShop" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="429" height="35"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -22,26 +26,33 @@
                     </constraints>
                 </view>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="c5B-n7-B8n">
-                    <rect key="frame" x="8" y="7" width="413" height="22"/>
+                    <rect key="frame" x="8" y="9" width="413" height="22"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsW-4J-Zfo">
+                    <rect key="frame" x="0.0" y="34" width="429" height="1"/>
+                    <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="3kB-bZ-PNf"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="Zmp-bn-TfF" firstAttribute="top" secondItem="c5B-n7-B8n" secondAttribute="bottom" constant="5" id="1B1-qA-0uF"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="c5B-n7-B8n" secondAttribute="trailing" constant="8" id="3dC-OW-i5s"/>
                 <constraint firstAttribute="bottom" secondItem="Zmp-bn-TfF" secondAttribute="bottom" id="MSe-gu-Ucz"/>
+                <constraint firstItem="Zmp-bn-TfF" firstAttribute="top" secondItem="c5B-n7-B8n" secondAttribute="bottom" constant="3" id="Mp1-dN-dVI"/>
+                <constraint firstAttribute="bottom" secondItem="bsW-4J-Zfo" secondAttribute="bottom" id="Q2E-tC-w4F"/>
+                <constraint firstItem="bsW-4J-Zfo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VgZ-qa-jkR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bsW-4J-Zfo" secondAttribute="trailing" id="cjH-V6-0S1"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Zmp-bn-TfF" secondAttribute="trailing" id="ima-CE-1su"/>
                 <constraint firstItem="c5B-n7-B8n" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="wAO-Td-6mG"/>
                 <constraint firstItem="Zmp-bn-TfF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xQD-bh-zkd"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <connections>
-                <outlet property="textField" destination="c5B-n7-B8n" id="G4Y-Cy-tZE"/>
-            </connections>
             <point key="canvasLocation" x="151.44927536231884" y="229.35267857142856"/>
         </view>
     </objects>
