@@ -14,9 +14,9 @@ extension UIView {
     self.layer.masksToBounds = true
     }
     
-    func border( borderColor: CGColor = UIColor.black.cgColor) {
-        self.layer.borderWidth = 1
-        self.layer.borderColor = borderColor
+    func border() {
+        self.layer.borderWidth = 2
+        self.layer.borderColor = UIColor(red: 67/255.0, green: 75/255.0, blue: 85/255.0, alpha: 1.0).cgColor
     }
 }
 

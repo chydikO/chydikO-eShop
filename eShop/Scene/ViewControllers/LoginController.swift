@@ -31,8 +31,8 @@ class LoginController: ViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         hideNavigationBar(animated: animated)
-        setupButton()
-        initializeData()
+        super.setup()
+
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -41,7 +41,7 @@ class LoginController: ViewController {
     }
     
     //MARK: - private func
-    private func setupButton() {
+    internal override func setupButton() {
         signInBtn!.border()
         signInBtn!.corner()
         [fbLoginBtn, googleLoginBtn].forEach { $0?.corner(radius: 10) }
@@ -69,7 +69,7 @@ class LoginController: ViewController {
         fogotPswBtn?.setAttributedTitle(fogotPswAttributeString, for: .normal)
     }
     
-    private func initializeData() {
+    internal override func initializeData() {
         /// Placeholder text
         loginTextField.placeholderText = "User name"
         passTextField.placeholderText = "Password"

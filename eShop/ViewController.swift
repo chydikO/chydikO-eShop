@@ -13,12 +13,25 @@ class ViewController: UIViewController {
     //MARK: - override
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setup()
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
     
+    func setup() {
+        view.backgroundColor = .white
+        setupButton()
+        initializeData()
+    }
+    
+    func setupButton(){
+        
+    }
+    func initializeData() {
+        
+    }
 }
 
