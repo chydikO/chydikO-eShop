@@ -12,7 +12,12 @@ extension UIView {
   func corner(radius: CGFloat = 25) {
     self.layer.cornerRadius = radius
     self.layer.masksToBounds = true
-  }
+    }
+    
+    func border( borderColor: CGColor = UIColor.black.cgColor) {
+        self.layer.borderWidth = 1
+        self.layer.borderColor = borderColor
+    }
 }
 
 extension UIViewController {

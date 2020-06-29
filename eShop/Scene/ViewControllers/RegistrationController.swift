@@ -8,23 +8,25 @@
 
 import UIKit
 
-class RegistrationController: UIViewController {
+class RegistrationController: ViewController {
+
+    @IBOutlet private weak var loginTextField: CustomTextField!
+    @IBOutlet private weak var passTextField: CustomTextField!
+    @IBOutlet private weak var confirmPassTextField: CustomTextField!
+
+    @IBOutlet private weak var registrationBtn: UIButton?
+    @IBOutlet private weak var cancelBtn: UIButton?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func registrationBtnClicked() {
+        
     }
-    */
-
+    
+    @IBAction func cancelBtnBtnClicked() {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginController: UIViewController {
+class LoginController: ViewController {
 
     @IBOutlet private weak var loginTextField: CustomTextField!
     @IBOutlet private weak var passTextField: CustomTextField!
@@ -40,13 +40,9 @@ class LoginController: UIViewController {
         showNavigationBar(animated: animated)
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.endEditing(true)
-    }
-    
     //MARK: - private func
     private func setupButton() {
-        
+        signInBtn!.border()
         signInBtn!.corner()
         [fbLoginBtn, googleLoginBtn].forEach { $0?.corner(radius: 10) }
 

@@ -157,10 +157,10 @@
             </objects>
             <point key="canvasLocation" x="1046.25" y="120.4225352112676"/>
         </scene>
-        <!--View Controller-->
+        <!--Registration Controller-->
         <scene sceneID="zas-C7-cJB">
             <objects>
-                <viewController id="aHK-uP-5cV" sceneMemberID="viewController">
+                <viewController id="aHK-uP-5cV" customClass="RegistrationController" customModule="eShop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yNU-6S-JNp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,7 +168,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="KuU-df-0uf">
                                 <rect key="frame" x="30" y="217.99999999999997" width="354" height="274.33333333333326"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WfU-yk-jBX">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WfU-yk-jBX" customClass="CustomTextField" customModule="eShop" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="40"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -176,7 +176,7 @@
                                             <constraint firstAttribute="height" constant="40" id="l4P-Fb-9ww"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sEm-73-pth">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sEm-73-pth" customClass="CustomTextField" customModule="eShop" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="61" width="354" height="40"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -190,7 +190,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Uf-eM-xI0">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Uf-eM-xI0" customClass="CustomTextField" customModule="eShop" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="163.33333333333331" width="354" height="40"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -211,6 +211,9 @@
                                                 <state key="normal" title="Sign Up">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="registrationBtnClicked" destination="aHK-uP-5cV" eventType="touchUpInside" id="9Lw-oC-ghm"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgi-At-Cyw">
                                                 <rect key="frame" x="187.66666666666663" y="0.0" width="166.33333333333337" height="50"/>
@@ -222,6 +225,9 @@
                                                 <state key="normal" title="Cancel">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="cancelBtnBtnClicked" destination="aHK-uP-5cV" eventType="touchUpInside" id="D4P-Hm-Hrz"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -246,6 +252,13 @@
                         <viewLayoutGuide key="safeArea" id="oPH-ny-Pma"/>
                     </view>
                     <navigationItem key="navigationItem" id="uFn-F6-5r4"/>
+                    <connections>
+                        <outlet property="cancelBtn" destination="cgi-At-Cyw" id="odo-pA-pyL"/>
+                        <outlet property="confirmPassTextField" destination="2Uf-eM-xI0" id="D3Y-hb-0hQ"/>
+                        <outlet property="loginTextField" destination="WfU-yk-jBX" id="1AL-ae-T7f"/>
+                        <outlet property="passTextField" destination="sEm-73-pth" id="r79-G6-76w"/>
+                        <outlet property="registrationBtn" destination="DTx-6N-mIa" id="kDD-pe-aT9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eh8-wY-PSE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

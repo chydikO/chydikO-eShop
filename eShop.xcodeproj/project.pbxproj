@@ -18,6 +18,7 @@
 		AF0530B524A5FB5C001282AD /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0530B424A5FB5C001282AD /* CustomTextField.swift */; };
 		AF0530B724A5FB69001282AD /* CustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF0530B624A5FB69001282AD /* CustomTextField.xib */; };
 		AF1605C624AA29FF00B4A96E /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1605C524AA29FF00B4A96E /* RegistrationController.swift */; };
+		AF46E4BE24AA2F4100C199D5 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF46E4BD24AA2F4100C199D5 /* BorderedButton.swift */; };
 		AFE3F8AF24A90A5B007AAE93 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3F8AE24A90A5B007AAE93 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		AF0530B424A5FB5C001282AD /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		AF0530B624A5FB69001282AD /* CustomTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextField.xib; sourceTree = "<group>"; };
 		AF1605C524AA29FF00B4A96E /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		AF46E4BD24AA2F4100C199D5 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		AFE3F8AE24A90A5B007AAE93 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 			children = (
 				AF0530B424A5FB5C001282AD /* CustomTextField.swift */,
 				AF0530B624A5FB69001282AD /* CustomTextField.xib */,
+				AF46E4BD24AA2F4100C199D5 /* BorderedButton.swift */,
 			);
 			path = ReuseableView;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			files = (
 				AF1605C624AA29FF00B4A96E /* RegistrationController.swift in Sources */,
 				AFE3F8AF24A90A5B007AAE93 /* UIViewExtension.swift in Sources */,
+				AF46E4BE24AA2F4100C199D5 /* BorderedButton.swift in Sources */,
 				AF05309724A5E840001282AD /* ViewController.swift in Sources */,
 				AF0530AC24A5F7DF001282AD /* UserInApp.swift in Sources */,
 				AF0530A924A5F411001282AD /* LoginController.swift in Sources */,
