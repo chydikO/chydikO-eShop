@@ -26,4 +26,5 @@ extension UIViewController {
         // Show the navigation bar on other view controllers
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
+    
 }
