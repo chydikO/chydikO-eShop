@@ -75,9 +75,16 @@ class LoginController: UIViewController {
     }
     
     private func initializeData() {
-    /// Placeholder text
-    loginTextField.placeholderText = "User name"
-    passTextField.placeholderText = "Password"
+        /// Placeholder text
+        loginTextField.placeholderText = "User name"
+        passTextField.placeholderText = "Password"
+        
+        loginTextField?.textField.autocorrectionType = UITextAutocorrectionType.no
+        loginTextField?.textField.returnKeyType = UIReturnKeyType.next
+        
+        passTextField?.textField.autocorrectionType = UITextAutocorrectionType.no
+        passTextField?.textField.returnKeyType = UIReturnKeyType.done
+        passTextField?.textField.isSecureTextEntry = true
         
     }
 }
