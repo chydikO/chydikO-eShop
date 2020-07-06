@@ -37,5 +37,28 @@ class ViewController: UIViewController {
         // handling code
         view.endEditing(true)
     }
+    
+    func resizeViewOnKeyboardMove(scrollView: UIScrollView?) {
+        guard let scrollView = scrollView else {
+            return
+        }
+        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillChangeFrameNotification,
+                                               object: nil,
+                                               queue: OperationQueue.main)
+        { [weak self] notification in
+            // frame
+            guard let frameEnd = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else {
+                return
+            }
+            scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: frameEnd.size.height + 21, right: 0)
+        }
+        
+        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification,
+                                               object: nil,
+                                               queue: OperationQueue.main)
+        { [weak self] _ in
+            scrollView.contentInset = UIEdgeInsets.zero
+        }
+    }
 }
 

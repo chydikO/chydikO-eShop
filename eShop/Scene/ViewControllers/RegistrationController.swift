@@ -16,10 +16,14 @@ class RegistrationController: ViewController {
 
     @IBOutlet private weak var registrationBtn: UIButton?
     @IBOutlet private weak var cancelBtn: UIButton?
+    
+    @IBOutlet private weak var scrollView: UIScrollView?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         super.setup()
+        resizeViewOnKeyboardMove(scrollView: scrollView)
     }
     
     @IBAction func registrationBtnClicked() {

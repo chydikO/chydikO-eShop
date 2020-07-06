@@ -18,6 +18,7 @@ class LoginController: ViewController {
     @IBOutlet private weak var fbLoginBtn: UIButton?
     @IBOutlet private weak var googleLoginBtn: UIButton?
 
+    @IBOutlet private weak var scrollView: UIScrollView?
 
     
     
@@ -25,7 +26,7 @@ class LoginController: ViewController {
     //MARK: - override
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        resizeViewOnKeyboardMove(scrollView: scrollView)
     }
     
     override func viewWillAppear(_ animated: Bool) {
