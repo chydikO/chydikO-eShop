@@ -17,14 +17,13 @@ class ViewController: UIViewController {
         
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.endEditing(true)
-    }
-    
     func setup() {
         view.backgroundColor = .white
         setupButton()
         initializeData()
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        view.addGestureRecognizer(tap)
     }
     
     func setupButton(){
@@ -32,6 +31,11 @@ class ViewController: UIViewController {
     }
     func initializeData() {
         
+    }
+    
+    @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
+        // handling code
+        view.endEditing(true)
     }
 }
 
